@@ -218,7 +218,7 @@ export default GeneratedUI;`;
       setCurrentAgent("1️⃣ Planner analyzing...");
       await new Promise(r => setTimeout(r, 300));
 
-      const response = await fetch("http://localhost:4000/api/generate", {
+      const response = await fetch("https://yuvaraj44-ai-assignment-backend-1.onrender.com/api/generate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
